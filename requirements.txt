@@ -39,7 +39,6 @@ PyYAML==5.4.1
 requests==2.25.1
 rsa==4.7.2
 six==1.15.0
-telebot==0.0.4
 tornado==6.1
 tzlocal==2.1
 uritemplate==3.0.1
