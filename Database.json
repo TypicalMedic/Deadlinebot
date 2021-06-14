@@ -1,0 +1,40 @@
+{
+    "Deadlines": [
+        {
+            "id": 0,
+            "name": "ДИДЛАЙН5",
+            "userId": 1324220572,
+            "description": "ААА",
+            "expDate": "15.06.2021",
+            "alarmTime": "02:24:00",
+            "lastNotificationDate": "15.06.2021"
+        },
+        {
+            "id": 1,
+            "name": "ДИДЛАЙН6",
+            "userId": 1324220572,
+            "description": "ААА",
+            "expDate": "15.06.2021",
+            "alarmTime": "02:25:00",
+            "lastNotificationDate": "15.06.2021"
+        }
+    ],
+    "Users": [
+        {
+            "id": 0,
+            "name": "amogus"
+        },
+        {
+            "id": 1,
+            "name": "boba"
+        },
+        {
+            "id": 1324220572,
+            "name": "Mapyca None"
+        },
+        {
+            "id": 377576838,
+            "name": "Aleksandr Klassen"
+        }
+    ]
+}
