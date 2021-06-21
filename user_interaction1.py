@@ -1,7 +1,13 @@
-import telebot
-import database_editing1 as act
-from datetime import datetime
-import  json
+try:
+    import telebot
+    from datetime import datetime
+    import json
+    import database_editing1 as act
+
+except ModuleNotFoundError as e:
+    with open("Logs.txt", 'w', encoding='utf-8') as logs:
+        errMessage = datetime.now().strftime("%d.%m.%Y %H:%M:%S") + " error: " + str(e)
+        logs.write(errMessage)
 
 bot = telebot.TeleBot('1724637364:AAEPqLLPkSfd788vqvneH_dusnBVL5pd2mM')  # коннектимся к нашему боту
 users_triggers = dict()
