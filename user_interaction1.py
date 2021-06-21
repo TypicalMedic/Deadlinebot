@@ -5,11 +5,12 @@ try:
     import database_editing1 as act
 
 except ModuleNotFoundError as e:
-    with open("Logs.txt", 'w', encoding='utf-8') as logs:
-        errMessage = datetime.now().strftime("%d.%m.%Y %H:%M:%S") + " error: " + str(e)
-        logs.write(errMessage)
-with open("Logs.txt", 'w', encoding='utf-8') as logs:
-        logs.write("TestLog")
+    with open("Logs.txt", 'a', encoding='utf-8') as logs:
+        errMessage = datetime.now().strftime("%d.%m.%Y %H:%M:%S") + " error: " + str(e) + "\n"
+        logs.writelines(errMessage)
+
+with open("Logs.txt", 'a', encoding='utf-8') as logs:
+    logs.writelines("TestLog\n")
 bot = telebot.TeleBot('1724637364:AAEPqLLPkSfd788vqvneH_dusnBVL5pd2mM')  # коннектимся к нашему боту
 users_triggers = dict()
 
